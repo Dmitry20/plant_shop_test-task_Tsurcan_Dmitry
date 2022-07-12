@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <title >Document</title>
+            <link rel="stylesheet" href="css/style.css"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <!-- header's navbar -->
+                <div class="header__navigation">
+                    <div class="header__logo">
+                        <img src="img\hero\02.svg" alt="logo"></div>
+                    <div class="header__name">Daunku</div>
+                    <div class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Home</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Shop</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">About Us</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="" class="menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__chart">
+                        <div class="chart__icon">
+                            <img src="img\hero\01.svg" alt="Chart">
+                        </div>
+                        <div class="chart__counter" id="chart__counter">
+                            <div class="chart__counter-icon">
+                                <span class="chart__counter-number" id="count">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- headers titles -->
+                <div class="header__tittle tittle">
+                    <h1 class="tittle__one">Bring Serenity to Your Place
+                            With Interior Plants</h1>
+                    <h2 class="tittle__two">find your dream plant for you home decoration with us, and we will make it happen.</h2>
+                </div>
+                <!-- headers image -->
+                <div class="header__image">
+                    <img src="img\hero\modern-living-room-interior-with-sofa-green-plants-lamp-table-dark-wall-background 1.jpg" alt="Home-page-background">
+                </div>
+                <!-- header info buttons which were supposed to show related
+                content by clicking. I've been trying to realise them as tabs 
+                by adding an "active" modifyier which switches from one to another
+                by clicking on them. Also related content had to inherit it, thus
+                content by default being "display: none" with "active" displayed 
+                a block with content. Didn't work-->
+                <div class="header__buttons button">
+                    <div class="button__content content" id="button-one">
+                        <div class="content__placeholder">
+                            <div class="content__price">$65.00</div>
+                            <div class="content__name">Dracena Fragnas</div>
+                        </div>
+                    </div>
+                    <button class="button__one" id="button-one">
+                        <img src="img\hero\Ellipse.svg" alt="Ellipse-button">
+                    </button>
+                    <button class="button__two" id="button-two">
+                        <img src="img\hero\Ellipse.svg" alt="Ellipse-button">
+                    </button>
+                        
+                    <button class="button__three" id="button-three">
+                        <img src="img\hero\Ellipse.svg" alt="Ellipse-button">
+                    </button>
+                </div>
+                <!-- brightening the buttom of the main page picture -->
+                <div class="rectangle"></div>
+            </header>
+            <section class="services">
+                <!-- shipping service -->
+                <div class="services__shipping shipping">
+                    <img src="img\services\Group.svg" alt="shipping-box" class="shipping__icon">
+                    <div class="shipping__info">
+                        <h3 class="shipping__title">Free Shipping</h3>
+                        <p class="shipping__text">No charge for each delivery</p>
+                    </div>
+                </div>
+                <!-- payment service -->
+                <div class="services__payment payment">
+                    <img src="img\services\Group2.svg" alt="payment" class="payment__icon">
+                    <div class="payment__info">
+                        <h3 class="payment__title">Quick Payment</h3>
+                        <p class="payment__text">100% secure payment</p>
+                    </div>
+                </div>
+                <!-- support service -->
+                <div class="services__support support">
+                    <img src="img\services\Group3.svg" alt="support" class="support__icon">
+                    <div class="support__info">
+                        <h3 class="support__title">24/7 Support</h3>
+                        <p class="support__text">Quick support</p>
+                    </div>
+
+                </div>
+            </section>
+            <section class="product">
+                <!-- info about section -->
+                <div class="product__title">Best Seller 
+                    Product
+                    <div class="product__text">See all colection
+                        <img src="img\product\Vector.svg" alt="arrow" class="info__text-arrow">
+                    </div>
+                </div>
+                <!-- plants cards -->
+                <ul class="product_plant plant">
+                    <li class="plant__card card">
+                        <img src="img\product\image1.png" alt="camille" class="card__img">
+                        <!-- each cards container: first -->
+                        <div class="card__container container">
+                            <div class="container__placeholder placeholder">
+                                <img src="img\product\Ellipse 6.svg" alt="shadow" class="plant-shadow">
+                            </div>
+                            <div class="container__info info">
+                                <div class="info__title">
+                                    <div class="info__text">Cammile</div>
+                                    <div class="info__stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                    </div>
+                                </div>
+                                <div class="info_pay pay">
+                                    <p class="pay__price">$65.00</p>
+                                    <!-- add to chart button's functionality -->
+                                    <button onclick="addToChart()" class="pay__button" id="count">
+                                        <img src="img\product\plus.svg" alt="plus-button">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="plant__card">
+                        <img src="img\product\image2.png" alt="camille" class="card__img">
+                        <!-- each cards container: second -->
+                        <div class="card__container container">
+                            <div class="container__placeholder placeholder">
+                                <img src="img\product\Ellipse 6.svg" alt="shadow" class="plant-shadow">
+                            </div>
+                            <div class="container__info info">
+                                <div class="info__title">
+                                    <div class="info__text">Cammile</div>
+                                    <div class="info__stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                    </div>
+                                </div>
+                                <div class="info_pay pay">
+                                    <p class="pay__price">$65.00</p>
+                                    <button onclick="addToChart()" class="pay__button" id="count">
+                                        <img src="img\product\plus.svg" alt="plus-button">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
+                    <li class="plant__card">
+                        <img src="img\product\image3.png" alt="camille" class="card__img">
+                        <!-- each cards container: third -->
+                        <div class="card__container container">
+                            <div class="container__placeholder placeholder">
+                                <img src="img\product\Ellipse 6.svg" alt="shadow" class="plant-shadow">
+                            </div>
+                            <div class="container__info info">
+                                <div class="info__title">
+                                    <div class="info__text">Cammile</div>
+                                    <div class="info__stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                        <img src="img\product\Stars.svg" alt="stars" class="stars">
+                                    </div>
+                                </div>
+                                <div class="info_pay pay">
+                                    <p class="pay__price">$65.00</p>
+                                    <button onclick="addToChart()" class="pay__button" id="count">
+                                        <img src="img\product\plus.svg" alt="plus-button">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="reference">
+                <!-- section's info -->
+                <div class="reference__text">
+                    <h1 class="reference__title">Interior Plant Reference</h1>
+                    <h1 class="reference__subtitle">make your home so comfortable with refreshing plants</h1>
+                </div>
+                <!-- section's images -->
+                <div class="reference__img img">
+                <!-- images which were supposed to become dark with info text over them after hovering, 
+                    why all of the images has their own wrappers, which were supposed to become
+                    a dark grey blocks with relevant text in them with 100% opacity by default and
+                    50% opacity while hovering them. It didn't work -->
+                    <div class="img__living-room">
+                        <img src="img\reference\living-room.jpg" alt="living-room" class="img__living-room-pic">
+                    </div>
+                    <div class="img__cabinet">
+                        <img src="img\reference\cabinet.jpg" alt="cabinet" class="img__cabinet-pic">
+                    </div>
+                    <div class="img__studio">
+                        <img src="img\reference\studio.jpg" alt="studio" class="img__studio-pic">
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__content content">
+                     <!-- newslatter component with subscribe placeholder and
+                            other links-->
+                    <div class="content__interactivities">
+                        <!-- newslatter component with subscribe placeholder -->
+                        <div class="content__newsletter newsletter">
+                            <div class="newsletter__title">Newslatter</div>
+                            <div class="newsletter__subscribe subscribe">
+                                <div class="subscribe__placeholder">
+                                    <p class="subscribe__placeholder-text">Enter your email</p>
+                                </div>
+                                <button class="subscribe__button">
+                                    <p class="subscribe__button-text">Subscribe</p>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- links -->
+                        <div class="content__info info">
+                            <div class="info__support">
+                                <div class="info__title">Support</div>
+                                <ul class="info__support-item">
+                                    <li class="info__item"><a href="#">About Us</a></li>
+                                    <li class="info__item"><a href="#">Careers</a></li>
+                                    <li class="info__item"><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                                
+                            <div class="info__link">
+                                <div class="info__title">Useful Link</div>
+                                <ul class="info__link-item">
+                                    <li class="info__item"><a href="#">Payment & Tax</a></li>
+                                    <li class="info__item"><a href="#">Team of service</a></li>
+                                    <li class="info__item"><a href="#">Privaci Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="info__menu">
+                                <div class="info__title">Our Menu</div>
+                                <ul class="info__menu-item">
+                                    <li class="info__item"><a href="#">Best Product</a></li>
+                                    <li class="info__item"><a href="#">Category</a></li>
+                                </ul class="info__support-item">
+                            </div>
+                            <div class="info__adress">
+                                <div class="info__title">Address</div>
+                                <ul class="info__adress-item">
+                                    <li class="info__item"><a href="#">JL. Setiabudhi No. 193 Sukasari, Bandung
+                                        West Java, Indonesia</a></li>
+                                    <li class="info__item"><a href="#">hallo@daunku.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__line"></div>
+                <p class="footer__rights">© 2022 Daunku - All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+    <script src="js\main.js"></script> 
+
+</html> 
+
+
